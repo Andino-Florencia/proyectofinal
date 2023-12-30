@@ -1,0 +1,269 @@
+/* estilos comunes */
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+}
+
+img {
+  border-radius: 10px;
+}
+
+/* estilos de carrusel */
+
+#carouselExample img{
+height: 30vw;
+width: 100%;
+}
+
+@media (max-width:991px){
+  #carouselExample{
+    display: none !important;
+  }
+}
+
+/* estilos de header */
+header {
+  padding: 60px;
+  text-align: center;
+  background-image: url(../img/fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header div {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-image: linear-gradient(blue orange);
+  color: aliceblue;
+  font-size: 1.1rem;
+}
+
+@media (max-width:800px) {
+  header {
+    background-position: center;
+  }
+}
+
+/* estilos navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  background-color: #d2cbcbe3;
+  position: sticky;
+  top: 0;
+  border-style: inset outset;
+  border-width: 5px;
+  border-color: black;
+}
+
+.navbar a {
+  color: rgb(13, 8, 1);
+  padding: 12px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: rgb(99, 91, 91);
+}
+
+@media (max-width:800px) {
+  .navbar {
+    flex-direction: column;
+    position: unset;
+  }
+}
+
+.navbar a {
+  text-align: center;
+}
+
+/* estilos principal */
+
+.principal {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+aside {
+  flex-basis: 25%;
+  padding: 10px;
+  background-color: rgb(160, 151, 151);
+  text-align: center;
+}
+
+aside p {
+  font-style: italic;
+}
+
+main {
+  flex-basis: 75%;
+  padding: 20px;
+  padding-left: 40px;
+  background-color: white;
+}
+
+main h2 {
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: rgb(9, 9, 9);
+  text-align: center;
+}
+
+main p {
+  font-style: italic;
+}
+
+main img {
+  width: 100%;
+  height: 22vw;
+  object-fit: cover;
+}
+
+@media (max-width:800px) {
+  .principal {
+    flex-direction: column;
+  }
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: 0.5s all ease-in-out;
+}
+
+.image:hover img {
+  transform: scale(1.07);
+}
+
+.asidetitle {
+  text-decoration: underline;
+}
+
+@media (max-width:800px) {
+  .image {
+    width: 50%;
+    height: auto;
+  }
+}
+
+/* estilos footer */
+
+footer {
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  color: aliceblue;
+}
+
+/* estilos quienes somos*/
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+.main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.imagennosotros {
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  transition: 0.5s all ease-in-out;
+}
+
+.footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+}
+
+/* estilos Servicios */
+
+#servicios {
+  margin-top: 20px;
+}
+
+.servicio {
+  margin-bottom: 20px;
+}
+
+.servicio h3 {
+  color: #333;
+}
+
+.servicio p {
+  color: #666;
+}
+
+.servicio img {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+/* estilos formulario */
+
+.form-group {
+  font-size: 50px;
+  padding: 10px;
+  background-color: antiquewhite;
+
+}
+
+/* estilos whasap */
+
+.fab {
+  display: block;
+  padding: 20px;
+  font-size: 30px;
+  margin: 2% auto;
+  border-radius: 8px;
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;
+  }
+  
+  .fab:hover {
+  opacity: 0.7;
+  }
+  
+  .fa-whatsapp {
+  background:rgb(50, 90, 126);
+  color: white;
+  }
